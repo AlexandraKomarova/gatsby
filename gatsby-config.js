@@ -35,14 +35,17 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS Bootstrap Tutorial`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f8f9fa`,
+        theme_color: `#fff`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline`
   ]
 }
-
-/*
-  <Helmet>
-    <title>Gatsby-Bootstrap Wordpress sourced</title>
-    <meta name="description" content="this is the description of our website"/>
-    <meta name="keywords" content="gatsby, gatsbyjs project, gatsby bootstrap"/>
-    <meta name="robots" content="index "/>
-  </Helmet>
- */
