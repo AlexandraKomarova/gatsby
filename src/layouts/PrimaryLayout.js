@@ -7,7 +7,8 @@ export default function PrimaryLayout (props) {
   return <div>
     <SEO />
     <Header title='index header'></Header>
-    <div>
+    <main>
+      <div>
       <div className="container">
         <div className="row justify-content-md-center">
           <div className={props.column}>
@@ -16,6 +17,7 @@ export default function PrimaryLayout (props) {
         </div>
       </div>
     </div>
+    </main>
     <Footer></Footer>
   </div>
 }

@@ -8,6 +8,7 @@ export default function Home ({ data  }) {
   return <PrimaryLayout column="col-xs-6">
     {data.allWordpressPost.nodes.map(node => (
       <Post
+        alt={node.featured_media.slug}
         image={node.featured_media.source_url}
         title={node.title}
         excerpt={node.excerpt}
@@ -26,6 +27,7 @@ export const query = graphql`
         excerpt
         featured_media {
           source_url
+          slug
         }
       }
     }

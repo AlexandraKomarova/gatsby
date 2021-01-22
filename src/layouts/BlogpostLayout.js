@@ -15,14 +15,16 @@ export default function BlogpostLayout ({ data }) {
       keywords={post.categories}
     />
     <Header title='index header'></Header>
-    <div>
-      <div className="container">
-        <div className="row justify-content-md-center">
-          <h1 dangerouslySetInnerHTML={{ __html: post.title }}/>
-          <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+    <main>
+      <div>
+        <div className="container">
+          <div className="row justify-content-md-center">
+            <h1 dangerouslySetInnerHTML={{ __html: post.title }}/>
+            <div dangerouslySetInnerHTML={{ __html: post.content }}></div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
     <Footer></Footer>
   </div>
 }
